@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home page</title>
+    <style media="screen">
+        textarea {
+          width: 50%;
+          height: 150px;
+          padding: 12px 20px;
+          box-sizing: border-box;
+          border: 2px solid #ccc;
+          border-radius: 4px;
+          background-color: #f8f8f8;
+          font-size: 16px;
+          resize: none;
+        }
+      </style>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <Center>
+        <img src="{{url_for('static', filename='images/t1.png')}}" width="300" height="300">
+        <h1><div><b><section><u>Toxic comment classification</u></section></b></div></h1><hr>
+        <form action="output" method="POST">
+            <div>
+                <h2>Enter a Comment:</h2>
+                <input type="text" name=Message id=Message>
+            </div>
+        <h2>To predict whether the comment is toxic or not click on following button</h2>
+        <input type="submit" name="submit" class="btn btn1" value="Predict">
+        </form>
+    </Center>
+</body>
+</html>
+
+
+
+
+  
